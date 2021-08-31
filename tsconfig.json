@@ -6,6 +6,20 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "paths": {
+      "button": [
+        "dist/button/button",
+        "dist/button"
+      ],
+      "foo-lib": [
+        "dist/foo-lib/foo-lib",
+        "dist/foo-lib"
+      ],
+      "input": [
+        "dist/input/input",
+        "dist/input"
+      ]
+    },
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
