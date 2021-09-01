@@ -1,0 +1,94 @@
+{
+  "commitizen": {
+    "name": "cz_customize",
+    "customize": {
+      "message_template": "{{change_type}}({{scope}}):{% if show_message %} {{message}}{% endif %}",
+      "example": "feature: this feature enable customize through config file",
+      "schema": "<type>: <body>",
+      "schema_pattern": "(feature|bug fix):(\\s.*)",
+      "bump_pattern": "^(break|new|fix|hotfix)",
+      "bump_map": {
+        "break": "MAJOR",
+        "new": "MINOR",
+        "fix": "PATCH",
+        "hotfix": "PATCH"
+      },
+      "change_type_order": ["BREAKING CHANGE", "feat", "fix", "refactor", "perf"],
+      "info_path": "cz_customize_info.txt",
+      "info": "This is customized info",
+      "questions": [
+        {
+          "type": "list",
+          "name": "change_type",
+          "choices": [
+            {
+              "value": "feature",
+              "name": "feature: A new feature."
+            },
+            {
+              "value": "bug fix",
+              "name": "bug fix: A bug fix."
+            },
+            {
+              "value": "docs",
+              "name": "docs: Documentation only changes."
+            },
+            {
+              "value": "style",
+              "name": "style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)."
+            },
+            {
+              "value": "refactor",
+              "name": "refactor: A code change that neither fixes a bug nor adds a feature."
+            },
+            {
+              "value": "perf",
+              "name": "performance: A code change that improves performance."
+            },
+            {
+              "value": "test",
+              "name": "test: Adding missing tests or correcting existing tests."
+            },
+            {
+              "value": "build",
+              "name": "build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)."
+            },
+            {
+              "value": "ci",
+              "name": "ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)."
+            },
+            {
+              "value": "chore",
+              "name": "chore: Other changes that don't modify src or test files."
+            },
+            {
+              "value": "revert",
+              "name": "revert: Reverts a previous commit"
+            }
+          ],
+          "message": "Select the type of change that you're committing: (Use arrow keys)\n"
+        },
+        {
+          "type": "input",
+          "name": "scope",
+          "message": "What is the scope of this change (e.g. component or file name)"
+        },
+        {
+          "type": "input",
+          "name": "message",
+          "message": "Body."
+        },
+        {
+          "type": "confirm",
+          "name": "show_message",
+          "message": "Do you want to add body message in commit?"
+        },
+        {
+          "type": "input",
+          "name": "issue",
+          "message": "What is the JIRA ticket related to this change (e.g. <project-name>-<number>.)"
+        }
+      ]
+    }
+  }
+}
