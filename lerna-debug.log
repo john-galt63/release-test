@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'input',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/dmitriyslam/Downloads/my-projects/foo/node_modules/.bin/lerna',
+0 silly argv   pkg: 'button'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/dmitriyslam/Downloads/my-projects/foo
+3 info versioning independent
+4 error FetchError: invalid json response body at https://stslogin.cloudflareaccess.com/cdn-cgi/access/login/verdaccio.sts.pl?kid=6709ea2ef6a3730a53c1b4e9a7700b70d7925dfa97a21b8688fb57db0c6bdb97&redirect_url=%2Fbutton&meta=eyJraWQiOiI2YzNiZmZlZjcxYmIwYTkwYzljYmVmM2I3YzBkNGExYzdiNGI4Yjc2YjgwMjkyYTYyM2FmZDlkYWM0NWQxYzY1IiwiYWxnIjoiUlMyNTYiLCJ0eXAiOiJKV1QifQ.eyJzZXJ2aWNlX3Rva2VuX3N0YXR1cyI6ZmFsc2UsImlhdCI6MTYzMDQ3NDg3OCwic2VydmljZV90b2tlbl9pZCI6IiIsImF1ZCI6IjY3MDllYTJlZjZhMzczMGE1M2MxYjRlOWE3NzAwYjcwZDc5MjVkZmE5N2EyMWI4Njg4ZmI1N2RiMGM2YmRiOTciLCJpc19nYXRld2F5IjpmYWxzZSwibmJmIjoxNjMwNDc0ODc4LCJ0eXBlIjoibWV0YSIsImlzX3dhcnAiOmZhbHNlLCJhdXRoX3N0YXR1cyI6Ik5PTkUifQ.RDT1SMKoEDSnDpxmKUCJAQMFos6eI5qtf9M3KvAWV3WW0N0spwBJrA-XBM1Kbl0eSnl7-nK-gBy1UH7IfM1tdxdhghJH0GwhDC_ivj9y7XaAvaTZK7ozO8V8WcqhZtpoUP-2k8jUql-8Z3MWfmAAC_-GcePq3Ib1TiuDO0JsAq25aE7HafAKkJt0C0PsGK0DlMkocY7C1biLXA52R5inyKRVN4U17Xp6aKPYguEzeZpcnm1QyBH4RTTHlSkwgRW65Qm9OZWX8plyWhwnWp6ngJEuLO2kt7zVRHWdn7ryPjqTyxoRSXKSTFNgI2jEJhw-M0VCuUcxMDF9LkKXPscHWQ reason: Unexpected token < in JSON at position 0
